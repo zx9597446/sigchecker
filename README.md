@@ -21,13 +21,14 @@ some API services only provided for authorized clients, this middleware verify a
 
 # how to make request on client side
 
-formation of signature is:
+formation of signature in request header is:
 
 	timestamp,signature
 
 to generate signature:
 
 	signature = md5(timestamp + secret)
+
 
 API doc
 ------------
